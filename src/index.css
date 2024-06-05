@@ -6,8 +6,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.gradient-background {
+  background: linear-gradient(to right, #ff9966, #ff5e62) no-repeat fixed;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  min-height: 100vh;
+  display: grid;
+  background: #e2d4ff;
 }
