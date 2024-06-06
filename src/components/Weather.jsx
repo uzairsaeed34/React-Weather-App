@@ -17,7 +17,6 @@ const Weather = () => {
     "01d": clear_icon,
     "02n": clear_icon,
     "02d": cloud_icon,
-    "02n": cloud_icon,
     "03d": cloud_icon,
     "03n": cloud_icon,
     "04d": drizzle_icon,
@@ -26,7 +25,7 @@ const Weather = () => {
     "09n": rain_icon,
     "10d": rain_icon,
     "10n": rain_icon,
-    "13n": snow_icon,
+    "13d": snow_icon,
     "13n": snow_icon, 
   }
 
@@ -66,7 +65,7 @@ const Weather = () => {
   useEffect(()=>{
     //console.log(process.env.REACT_APP_API_ID)
     search("London");
-  },[])
+  })
   return (
     <div className='weather-box'>
     <div className='weather'>
